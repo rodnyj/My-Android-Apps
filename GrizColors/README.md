@@ -2,5 +2,5 @@ This app Shows 3 colors with corresponding sliders and it includes an Alpha slid
 
 YouTube preview URL ---> https://youtu.be/GyeFWV_VQlg
 
-Screenshot "My Colors.PNG" and apk "GrizzlyColors.apk" can also be found under the folder "Haiti App"
+Screenshot "My Colors.PNG" and apk "GrizzlyColors.apk" can also be found under the folder "GrizColors App"
 
