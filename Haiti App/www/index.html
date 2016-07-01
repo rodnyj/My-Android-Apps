@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html>
+	<head>
+		<!--
+		Customize this policy to fit your own app's needs. For more guidance, see:
+		https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+		Some notes:
+		* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+		* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+		* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+		* Enable inline JS: add 'unsafe-inline' to default-src
+		-->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+		<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="lib/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<title>Haiti App</title>
+		
+		<style>
+			div.img {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 180px;
+			}
+
+			div.img:hover {
+				border: 1px solid #777;
+			}
+
+			div.img img {
+				width: 100%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+        <!-- based on example from:
+    	    http://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_button
+        -->  
+		<div data-role="page" id="pageone"  style="text-transform:none" >
+			<div data-role="header">
+				<h3>Welcome to Haiti</h3>
+			</div>
+			<div data-role="main" class="ui-content">
+				<div align="center">
+				<!--	<h1> Crowdsourced Citizenship </h1> -->
+					<img src="img/haiti.jpg" alt="Haiti img not available" width="300px">
+			
+					<a href="#pagetwo" class="ui-btn">History of Haiti</a>
+					<a href="#pagethree" class="ui-btn">About the Earthquake</a>
+					<a href="#pagefour" class="ui-btn">Gallery</a>
+					<a href="#pagefive" class="ui-btn">About the Author</a>
+	
+				</div>
+			</div>
+
+		</div>
+
+		<div data-role="page" id="pagetwo"  style="text-transform:none" >
+			<div data-role="header">
+				<h3>History of Haiti</h3>
+			</div>
+
+			<div data-role="main" class="ui-content">
+
+				<h1></h1>
+				<h1>Ayiti</h1>
+				
+				<img src="img/haitimap.png" alt="Haiti img not available" width="300px">
+
+		
+		<!-- History of Haiti! ------------------------------------------------------------------------------------------------------------------->
+		<h3> Brief history of Haiti </h3>				
+		<p><br/>
+		Haiti forms part of the island of Hispaniola. Before the Europeans arrived a people called the Arawaks lived there. However on 6 December 1492 Christopher Columbus landed at Mole Saint-Nicolas on the north-west and called the island Espanola, which was later anglicized as Hispaniola.
+
+		Columbus built a fort on the island and he left 39 men to man it. However when he returned in 1493 he found the Arawaks had killed them. Yet Christopher's brother Bartholomew continued to explore the island and Spanish settlers came. A hundred years after Columbus discovered Hispaniola European diseases and war had almost exterminated the Arawaks.
+
+		Meanwhile the Spanish claimed ownership of the whole island but they settled mainly in the east. The west was left largely empty and in the 17th century the French settled there. In 1664 they founded Port-de-Paix. Finally in 1697 the Spanish and French signed the Treaty of Ryswick. France was given the western third of the island of Hispaniola. They called their colony Saint-Domingue.
+
+		In the 18th century Saint-Domingue (Haiti) became rich. The colony exported sugar, coffee, cotton, indigo and cocoa. However the prosperity depended on slavery. Huge numbers of black slaves were brought to work on plantations. By the end of the 18th century there were about 30,000 French people, about 27,000 people of mixed race and nearly half a million black slaves!
+
+		However after 1789 the ideas of the French Revolution such as liberty and equality reached the French colony of Saint-Domingue. On 14 August 1791 the slaves rebelled and a war ensued, which devastated the colony. However the war ended when France ended slavery in 1793.
+
+		One of the leaders of the Black rebels was a remarkable man called Toussaint L'Overture. When the war ended he joined the French army. The French were at war with Spain and they were fighting against the Spanish two-thirds of the island of Hispaniola.
+
+		In 1797 Toussaint was made commander of the French army in Hispaniola. By 1801 he was in control of the island. He declared all slaves free and made himself head of a new government. He also published a new constitution. Fearing they were losing their colony the French sent an army under General Charles Leclerc. Using a trick Leclerc captured Toussaint. However his army was decimated by fever. Furthermore a former slave called Jean-Jacques Dessalines continued the struggle against the French and on 1 January 1804 the island became independent. It was renamed Haiti.
+		</p<
+		<br/>
+
+		<h3><br/>
+		Independent Haiti
+		</h3>
+		<br/>
+		<p><br/>
+		However the island was left devastated by war and Dessalines was assassinated in 1806. Then in 1809 the Spanish captured the eastern part of the island (it is now the Dominican Republic while the western part of the island eventually became Haiti). In 1822 President Boyer of Haiti captured what is now the Dominican Republic but the two separated permanently in 1844.
+
+		Meanwhile other countries were slow to recognize Haiti. France recognized Haiti in 1825. However in return the French demanded compensation for the land their plantation owners had lost in Haiti. The Haitians were forced to pay a large sum of money, which was not completed until 1887.
+
+		Britain recognized Haiti in 1833 but the USA did not follow until 1862.
+
+		Meanwhile President Boyar was overthrown in 1843. Afterwards Haiti had a long period of instability. Between 1843 and 1911 there were 16 rulers. Of them 11 were overthrown by revolutions.
+		</p>
+
+		<h3><br/>
+		Modern Haiti
+		</h3>
+
+		<br/>
+		<p>
+		In the early 20th century political instability in Haiti grew worse. Finally in 1915 the USA sent marines to occupy the country to protect American business interests there. Not surprisingly the occupation was resented by the Haitians and the US marines were finally withdrawn in 1934.
+
+		However there was no end to political instability in Haiti. In 1946 the president was removed by a military coup. He was replaced by Dumarsais Estime who was in turn overthrown by the military in 1950. He was replaced by Paul Malgoire, who was forced to resign in 1956. A series of provisional presidents followed until the people elected Francois Duvalier (Papa Doc) in 1957.
+
+		Duvalier soon became a brutal dictator ruling Haiti with the help of his infamous secret police, the Tontons Macoutes. Under his rule trade unions were banned and the press were strictly controlled. In 1961 following a fraudulent election Duvalier was re-elected. In 1964 he made himself president for life. in 1971 he changed the constitution and gave himself the power to name his successor. He died the same year and his son Jean-Claude Duvalier (Baby Doc) became president of Haiti.
+
+		Baby Doc proved to be as repressive as his father. In the late 1970s and early 1980s many Haitians fled to Florida by boat to escape his rule and by 1984 economic conditions were so bad sheer desperation forced people to demonstrate. Duvalier lost support and in 1986 he went into exile.
+
+		However there was no return to democratic government in Haiti. After Duvalier went the army seized power in Haiti. Nevertheless protests at home and pressure from the USA forced them to hold elections in December 1990. Father Jean-Bertrand Aristide was elected president. However he did not rule for long. In September 1991 he was overthrown by a coup and forced to flee abroad.
+
+		Once again a brutal military dictatorship ruled Haiti and many people tried to flee from the country. Pressure from other countries forced the army to allow president Aristide to return.
+
+		When Aristide's term ended in 1996 Rene Preval was elected president. Unfortunately it was not the end of the political instability. There was a struggle between the two men, Aristide and Preval. In 2000 Aristide was elected president but the opposition refused to accept the result and would not recognize Aristide as president. Following protests in November 2003 Aristide promised new elections. However in February 2004 rebellion broke out and Aristide was forced to leave Haiti. An interim government then took over until new elections could be held. Finally in 2006 Preval was elected president. Hopefully he will bring some stability to Haiti.
+
+		Meanwhile in 2003 Voodoo was recognized as an official religion in Haiti. (Although it has been practiced there for 300 years).
+
+		In the early 21st century Haiti was still a very poor country (the poorest in the Western Hemisphere) and many of her people were subsistence farmers. Unfortunately in January 2010 Haiti suffered a terrible earthquake, which left vast numbers of people dead or injured. Many more were left homeless. Already a very poor country Haiti was left with the monumental task of recovering from the earthquake. Today the population of Haiti is 9.8 million.
+		</p>
+		<!-- History ended ---------------------------------------------------------------------------------------------------------------->
+		
+			</div>
+			
+		</div>
+		
+		<div data-role="page" id="pagethree"  style="text-transform:none" >
+			<div data-role="header">
+				<h3>About the Earthquake</h3>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div align="center">
+					<h3>Ayiti</h3>
+				</div>
+				
+				<div>
+					 <p><b>The Toll:</b> <br/>
+						220,000-316,000: estimates of the death toll vary <br/>
+						300,000: number of injured<br/>
+						1.5 million: people initially displaced<br/>
+						64,680: displaced people remain as of March 31, 2015<br/>
+						3,978: number of schools damaged or destroyed by earthquake<br/>
+						<b>Response in Dollars:</b>
+						$13.34 billion: aid allocated by international agencies for 2010-2020, according to the United Nations Office of the Special Envoy for Haiti<br/>
+						$4 billion: aid committed to Haiti by the U.S. Government. $3.1 billion has been disbursed as of September 30, 2014<br/>
+						<b>Effect on Foreigners:</b>
+						96: Death Toll of U.N. peacekeepers<br/>
+						122: Americans confirmed dead
+					</p>
+				</div>
+			</div>						
+		</div>
+		
+		<div data-role="page" id="pagefour"  style="text-transform:none" >
+			<div data-role="header">
+				<h3>Gallery</h3>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div align="center">
+					<h1> Ayiti</h1>
+					
+				<h2>Take a look at Haiti</h2>
+
+				<p>Ayiti Cheri Mwen </p>
+				
+		<!-- GALLERY PLACE -->
+		<div class="img">
+		  <a target="_blank" href="haitibeach.jpg">
+			<img src="img/haitibeach.jpg" alt="haitibeach" width="300" height="200">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+
+		<div class="img">
+		  <a target="_blank" href="img/haitidance.jpg">
+			<img src="img/haitidance.jpg" alt="haitidance" width="600" height="400">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+
+		<div class="img">
+		  <a target="_blank" href="img/haitilive.jpg">
+			<img src="img/haitilive.jpg" alt="haitilive" width="600" height="400">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+
+		<div class="img">
+		  <a target="_blank" href="img/haitiquake.jpg">
+			<img src="img/haitiquake.jpg" alt="quake" width="600" height="400">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+		
+		<div class="img">
+		  <a target="_blank" href="img/haitichild.jpg">
+			<img src="img/haitichild.jpg" alt="child" width="600" height="400">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+		
+		<div class="img">
+		  <a target="_blank" href="img/haitiboy.jpg">
+			<img src="img/haitiboy.jpg" alt="boy" width="600" height="400">
+		  </a>
+		  <div class="desc">Add a description of the image here</div>
+		</div>
+		<!-- -->				
+
+
+				</div>
+			</div>						
+		</div>
+		
+		<div data-role="page" id="pagefive"  style="text-transform:none" >
+			<div data-role="header">
+				<h3>About the Author</h3>
+			</div>
+			
+			<div data-role="main" class="ui-content">
+				<div align="center">
+					<p>
+						Created by Rodny Joseph<br>
+						<br>
+						Thank you for using my app
+						
+					</p>
+				</div>
+			</div>						
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
